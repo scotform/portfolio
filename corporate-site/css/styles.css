@@ -18,6 +18,11 @@ body {
   margin-left: 3px;
 }
 
+@media (max-width: 992px) {
+  header .intro-text {
+    padding: 25px;
+  }
+}
 section {
   position: relative;
   margin: 100px 0;
@@ -181,7 +186,6 @@ h2 em {
 
 @media (max-width: 768px) {
   header h2 {
-    color: #fff;
     font-size: 36px;
   }
 }
@@ -341,6 +345,12 @@ h2 + p.lead:after {
   background-color: #47637e;
 }
 
+@media (max-width: 576px) {
+  .btn-cta {
+    display: block;
+    margin-top: 30px;
+  }
+}
 @media (min-width: 768px) {
   .navbar {
     padding-top: 0;
@@ -349,7 +359,6 @@ h2 + p.lead:after {
 }
 .navbar-brand > img {
   width: 112px;
-  margin-left: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -459,32 +468,86 @@ h2 + p.lead:after {
 
 .background-two-robots {
   height: 600px;
-  background: url("../images/robot-passing-tool-to-second-robot.png") right top no-repeat;
-  background-size: contain;
+  background-image: url("../images/wedge.svg"), url("../images/robot-passing-tool-to-second-robot.png");
+  background-position: left bottom, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
 }
 
+@media (max-width: 992px) {
+  .background-two-robots {
+    background-image: url("../images/robot-passing-tool-to-second-robot.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .background-guiide-db {
   height: 600px;
-  background: url("../images/tin-robot-with-controls.png") right top no-repeat;
-  background-size: contain;
+  background-image: url("../images/wedge.svg"), url("../images/tin-robot-with-controls.png");
+  background-position: left bottom, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
 }
 
+@media (max-width: 992px) {
+  .background-guiide-db {
+    background-image: url("../images/tin-robot-with-controls.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .toy-robot-with-goggles {
   height: 600px;
-  background: url("../images/toy-robot-with-goggles.png") right top no-repeat;
-  background-size: contain;
+  background-image: url("../images/wedge.svg"), url("../images/toy-robot-with-goggles.png");
+  background-position: left bottom, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
 }
 
+@media (max-width: 992px) {
+  .toy-robot-with-goggles {
+    background-image: url("../images/toy-robot-with-goggles.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .toy-robot-holding-sim-card {
   height: 600px;
-  background: url("../images/toy-robot-holding-sim-card.png") right top no-repeat;
-  background-size: contain;
+  background-image: url("../images/wedge.svg"), url("../images/toy-robot-holding-sim-card.png");
+  background-position: left bottom, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
 }
 
+@media (max-width: 992px) {
+  .toy-robot-holding-sim-card {
+    background-image: url("../images/toy-robot-holding-sim-card.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .making-toy-robots {
   height: 600px;
-  background: url("../images/making-toy-robots.png") right top no-repeat;
-  background-size: contain;
+  background-image: url("../images/wedge.svg"), url("../images/making-toy-robots.png");
+  background-position: left bottom, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+}
+
+@media (max-width: 992px) {
+  .making-toy-robots {
+    background-image: url("../images/making-toy-robots.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.wedge {
+  background: url("../images/wedge.svg") 0 0 no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -493,7 +556,6 @@ h2 + p.lead:after {
 .toy-robot-with-goggles,
 .toy-robot-holding-sim-card,
 .making-toy-robots {
-    background-size: cover;
     height: auto;
     min-height: 512px;
   }
@@ -509,7 +571,7 @@ h2 + p.lead:after {
 }
 .guiide-dg-card-background {
   height: 100%;
-  background: url("../images/robot.png") left top no-repeat;
+  background: url("../images/robot.png") left bottom no-repeat;
   background-size: cover;
 }
 
