@@ -1,0 +1,150 @@
+html, 
+body {
+    overflow-x: hidden;
+}
+
+/*.container-fluid {
+    max-width: 1480px;
+}*/
+
+.logo {
+    position: absolute;
+    top: 50px;
+}
+
+.home .logo {
+    top: -78px;
+    margin-left: 3px;
+}
+
+section {
+    position: relative;
+    margin: 100px 0;
+}
+
+@media (max-width: $lg) {
+    main > section {
+        margin-top: 75px;
+        padding: 0 25px;
+    }
+}
+
+@media (min-width: $lg) {
+    .section-text {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.section-text {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-quote {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    blockquote {
+        position: relative;
+        margin: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    @media (min-width: $lg) {
+        blockquote {
+            padding-left: 100px !important;
+            padding-right: 100px !important;
+        }
+    }
+    
+    blockquote:before,
+    blockquote:after {
+        position: absolute;
+        color: #f2f2f2;
+        font-size: 10rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    blockquote:before {
+        content: '“';
+        left: 3rem;
+        top: -4rem;
+    }
+
+    @media (max-width: $sm) {
+        blockquote:before {
+            left: -3rem;
+            top: -5rem;
+        }
+    }
+    
+    /*blockquote:after {
+        content: '”';
+        right: 0rem;
+        bottom: 5rem;
+    }*/
+
+    @media (max-width: $sm) {
+        blockquote:after {
+            right: -2rem;
+            bottom: 5rem;
+        }
+    }
+
+    p {
+        font-size: 42px;
+        line-height: 1.4;
+    }
+
+    @media (max-width: $md) {
+        p {
+            font-size: 32px;
+        }
+    }
+
+    .blockquote-footer {
+        margin-top: 25px;
+    }
+
+    cite {
+        line-height: 3;
+        text-align: left;
+    }
+}
+
+.vertical-divider {
+    //position: absolute;
+    display: table;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    .center-element {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+
+        &:before,
+        &:after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            left: 50%;
+            border-left: 1px solid #ccc;
+        }
+        
+        &:before {
+            bottom: 50%;
+            top: 0;
+        }
+
+        &:after {
+            top: 50%;
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.background-two-robots {
+    height: 600px;
+    background: url("../images/robot-passing-tool-to-second-robot.png") right top no-repeat;
+    background-size: contain;
+}
+
+.background-guiide-db {
+    height: 600px;
+    background: url("../images/tin-robot-with-controls.png") right top no-repeat;
+    background-size: contain;
+}
+
+.toy-robot-with-goggles {
+    height: 600px;
+    background: url("../images/toy-robot-with-goggles.png") right top no-repeat;
+    background-size: contain;
+}
+
+.toy-robot-holding-sim-card {
+    height: 600px;
+    background: url("../images/toy-robot-holding-sim-card.png") right top no-repeat;
+    background-size: contain;
+}
+
+.making-toy-robots {
+    height: 600px;
+    background: url("../images/making-toy-robots.png") right top no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: $md) {
+    .background-two-robots, 
+    .background-guiide-db, 
+    .toy-robot-with-goggles, 
+    .toy-robot-holding-sim-card, 
+    .making-toy-robots {
+        background-size: cover;
+        height: auto;
+        min-height: 512px;
+    }
+}
+
+@media (max-width: $sm) {
+    .background-two-robots, 
+    .background-guiide-db, 
+    .toy-robot-with-goggles, 
+    .toy-robot-holding-sim-card, 
+    .making-toy-robots {
+        min-height: 340px;
+    }
+}
+
+.guiide-dg-card-background {
+    height: 100%;
+    background: url("../images/robot.png") left top no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: $xl) {
+    .guiide-dg-card-background {
+        background-position: -80px top;
+    }
+}
+
+.guiide-card-background {
+    height: 100%;
+    background: url("../images/card-guiide.png") right top no-repeat;
+    background-size: cover;
+}
+
+/*@media (max-width: $xl) {
+    .guiide-card-background {
+        background-position: -390px top;
+    }
+}*/
+
+/*@media (max-width: $md) {
+    .guiide-card-background, 
+    .guiide-dg-card-background {
+        height: 270px;
+        background-size: contain;
+    }
+}*/
+
+.curve-left {
+    float: left;
+    height: 100%;
+    margin-left: -1px;
+}
+
+.curve-right {
+    float: right;
+    height: 100%;
+    margin-right: -1px;
+}
+
+@media (max-width: $md) {
+    .curve-left, 
+    .curve-right {
+        visibility: hidden;
+    }
+}

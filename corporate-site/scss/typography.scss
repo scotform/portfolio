@@ -1,0 +1,221 @@
+body {
+    font-family: $body-font;
+}
+
+h1 {
+    font-family: $heading-font;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 26px;
+}
+
+.home .header {
+    h1 {
+        margin-bottom: 0;
+        font-size: 78px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    @media (max-width: $sm) {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    .sub-heading {
+        text-align: center;
+        max-width: 480px;
+        margin: auto;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    @media (max-width: $sm) {
+        .sub-heading {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+
+h2 {
+    font-family: $heading-font;
+    font-size: 36px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 30px;
+
+    em {
+        color: $primary-color;
+        font-style: normal;
+    }
+}
+
+@media (max-width: $md) {
+    header h2 {
+        color: #fff;
+        font-size: 36px;
+    }
+}
+
+@media (max-width: $xl) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: $md) {
+    h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: $sm) {
+    h2 {
+        font-size: 26px;
+    }
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: $xl) {
+    p, li {
+        font-size: 16px;
+    }
+}
+
+h2 + p.lead {
+    font-size: 20px;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: $md) {
+    h2 + p.lead {
+        max-width: 580px;
+        margin: 0 auto;
+    } 
+}
+
+h2 + p.lead:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    width: 100px; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 5px solid #0d6efd; /* This creates the border. Replace black with whatever color you want. */
+}
+
+@media (max-width: $sm) {
+    h2 + p.lead {
+        font-size: 18px;
+    }
+}
+
+.footer {
+    h2 {
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    @media (min-width: $lg) {
+        h2 {
+            line-height: 0.7;
+        }
+    }
+
+    p {
+        text-align: center;
+        color: #eee;
+    }
+
+    @media (min-width: $sm) {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    @media (min-width: $sm) {
+        h2 + p {
+            white-space: nowrap;
+        }
+    }
+
+    @media (max-width: $md) {
+        [class*='col-'] {
+            margin: auto;
+        }
+
+        /*[class*='col-'] + [class*='col-'] {
+            margin-top: 50px;
+        }*/
+    }
+
+    small {
+        color: #888;
+        white-space: nowrap;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .copyright {
+        padding: 0 20px;
+        color: #ccc;
+        font-size: 16px;
+    }
+}
+
+.banner-xl {
+    h2 {
+        font-family: $heading-font;
+        font-weight: 700;
+        font-size: 78px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: $xl) {
+        h2 {
+            font-size: 64px;
+        }
+    }
+
+    @media (max-width: $xl) {
+        h2 {
+            font-size: 52px;
+        }
+    }
+
+    @media (max-width: $sm) {
+        h2 {
+            font-size: 46px;
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: 28px;
+    }
+
+    @media (max-width: $lg) {
+        p {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: $sm) {
+        p {
+            font-size: 20px;
+        }
+    }
+}

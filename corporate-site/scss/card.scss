@@ -1,0 +1,27 @@
+.card {
+    border-radius: 20px;
+
+    .rounded-start {
+        border-bottom-left-radius: 20px !important;
+        border-top-left-radius: 20px !important;
+    }
+
+    @media (max-width: $md) {
+        .rounded-start {
+            border-bottom-left-radius: 0 !important;
+            border-top-right-radius: 20px !important;
+        }
+    }
+
+    .rounded-end {
+        border-bottom-right-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+    }
+
+    @media (max-width: $md) {
+        .rounded-end {
+            border-bottom-right-radius: 0 !important;
+            border-top-left-radius: 20px !important;
+        }
+    }
+}

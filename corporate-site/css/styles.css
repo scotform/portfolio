@@ -1,0 +1,572 @@
+@charset "UTF-8";
+/* sass --watch scss/styles.scss css/styles.css  */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/*.container-fluid {
+    max-width: 1480px;
+}*/
+.logo {
+  position: absolute;
+  top: 50px;
+}
+
+.home .logo {
+  top: -78px;
+  margin-left: 3px;
+}
+
+section {
+  position: relative;
+  margin: 100px 0;
+}
+
+@media (max-width: 992px) {
+  main > section {
+    margin-top: 75px;
+    padding: 0 25px;
+  }
+}
+@media (min-width: 992px) {
+  .section-text {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.section-text {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-quote {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /*blockquote:after {
+      content: '”';
+      right: 0rem;
+      bottom: 5rem;
+  }*/
+}
+.section-quote blockquote {
+  position: relative;
+  margin: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+@media (min-width: 992px) {
+  .section-quote blockquote {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+.section-quote blockquote:before,
+.section-quote blockquote:after {
+  position: absolute;
+  color: #f2f2f2;
+  font-size: 10rem;
+  width: 4rem;
+  height: 4rem;
+}
+.section-quote blockquote:before {
+  content: "“";
+  left: 3rem;
+  top: -4rem;
+}
+@media (max-width: 576px) {
+  .section-quote blockquote:before {
+    left: -3rem;
+    top: -5rem;
+  }
+}
+@media (max-width: 576px) {
+  .section-quote blockquote:after {
+    right: -2rem;
+    bottom: 5rem;
+  }
+}
+.section-quote p {
+  font-size: 42px;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .section-quote p {
+    font-size: 32px;
+  }
+}
+.section-quote .blockquote-footer {
+  margin-top: 25px;
+}
+.section-quote cite {
+  line-height: 3;
+  text-align: left;
+}
+
+.vertical-divider {
+  display: table;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.vertical-divider .center-element {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.vertical-divider .center-element:before, .vertical-divider .center-element:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+.vertical-divider .center-element:before {
+  bottom: 50%;
+  top: 0;
+}
+.vertical-divider .center-element:after {
+  top: 50%;
+  bottom: 0;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 26px;
+}
+
+.home .header h1 {
+  margin-bottom: 0;
+  font-size: 78px;
+  font-weight: 800;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .home .header h1 {
+    font-size: 60px;
+  }
+}
+.home .header .sub-heading {
+  text-align: center;
+  max-width: 480px;
+  margin: auto;
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width: 576px) {
+  .home .header .sub-heading {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+h2 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 30px;
+}
+h2 em {
+  color: #3E566E;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  header h2 {
+    color: #fff;
+    font-size: 36px;
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+p, li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  p, li {
+    font-size: 16px;
+  }
+}
+h2 + p.lead {
+  font-size: 20px;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  h2 + p.lead {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+}
+h2 + p.lead:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  width: 100px;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 5px solid #0d6efd;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+@media (max-width: 576px) {
+  h2 + p.lead {
+    font-size: 18px;
+  }
+}
+.footer h2 {
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .footer h2 {
+    line-height: 0.7;
+  }
+}
+.footer p {
+  text-align: center;
+  color: #eee;
+}
+@media (min-width: 576px) {
+  .footer p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) {
+  .footer h2 + p {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    /*[class*='col-'] + [class*='col-'] {
+        margin-top: 50px;
+    }*/
+  }
+  .footer [class*=col-] {
+    margin: auto;
+  }
+}
+.footer small {
+  color: #888;
+  white-space: nowrap;
+}
+.footer a {
+  color: #fff;
+  font-weight: 600;
+}
+.footer .copyright {
+  padding: 0 20px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.banner-xl h2 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 78px;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .banner-xl h2 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 1200px) {
+  .banner-xl h2 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 576px) {
+  .banner-xl h2 {
+    font-size: 46px;
+  }
+}
+.banner-xl p {
+  color: #fff;
+  font-size: 28px;
+}
+@media (max-width: 992px) {
+  .banner-xl p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .banner-xl p {
+    font-size: 20px;
+  }
+}
+
+.btn-cta {
+  background-color: #3E566E;
+  border-color: #3E566E;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 19px;
+}
+.btn-cta:hover {
+  color: #fff;
+  background-color: #47637e;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.navbar-brand > img {
+  width: 112px;
+  margin-left: 15px;
+}
+
+@media (max-width: 1200px) {
+  .navbar > .container-fluid {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+@media (max-width: 992px) {
+  .navbar > .container-fluid {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
+/*@media (min-width: $sm) {
+    .navbar {
+        padding-top: 40px;
+    }
+}*/
+.navbar-nav {
+  position: relative;
+  z-index: 999;
+}
+.navbar-nav .nav-link {
+  margin-left: 30px;
+  padding: 19px 15px 15px !important;
+  font-size: 18px;
+  border-bottom: 4px solid transparent;
+}
+.navbar-nav .nav-link.hover, .navbar-nav .nav-link.active {
+  color: #000;
+  border-bottom: 4px solid #3E566E;
+}
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+.home .navbar-nav a {
+  color: #666 !important;
+}
+.home .navbar-nav a.hover {
+  color: #fff;
+  border-bottom: 4px solid #3E566E;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    margin-top: 45px;
+  }
+  .navbar-nav .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.analytics-iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .analytics-iframe {
+    height: 560px;
+  }
+}
+@media (min-width: 992px) {
+  .analytics-iframe {
+    height: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .analytics-iframe {
+    height: 1000px;
+  }
+}
+@media (min-width: 1400px) {
+  .analytics-iframe {
+    height: 1200px;
+  }
+}
+.card {
+  border-radius: 20px;
+}
+.card .rounded-start {
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+@media (max-width: 768px) {
+  .card .rounded-start {
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 20px !important;
+  }
+}
+.card .rounded-end {
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+@media (max-width: 768px) {
+  .card .rounded-end {
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 20px !important;
+  }
+}
+
+.background-two-robots {
+  height: 600px;
+  background: url("../images/robot-passing-tool-to-second-robot.png") right top no-repeat;
+  background-size: contain;
+}
+
+.background-guiide-db {
+  height: 600px;
+  background: url("../images/tin-robot-with-controls.png") right top no-repeat;
+  background-size: contain;
+}
+
+.toy-robot-with-goggles {
+  height: 600px;
+  background: url("../images/toy-robot-with-goggles.png") right top no-repeat;
+  background-size: contain;
+}
+
+.toy-robot-holding-sim-card {
+  height: 600px;
+  background: url("../images/toy-robot-holding-sim-card.png") right top no-repeat;
+  background-size: contain;
+}
+
+.making-toy-robots {
+  height: 600px;
+  background: url("../images/making-toy-robots.png") right top no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 768px) {
+  .background-two-robots,
+.background-guiide-db,
+.toy-robot-with-goggles,
+.toy-robot-holding-sim-card,
+.making-toy-robots {
+    background-size: cover;
+    height: auto;
+    min-height: 512px;
+  }
+}
+@media (max-width: 576px) {
+  .background-two-robots,
+.background-guiide-db,
+.toy-robot-with-goggles,
+.toy-robot-holding-sim-card,
+.making-toy-robots {
+    min-height: 340px;
+  }
+}
+.guiide-dg-card-background {
+  height: 100%;
+  background: url("../images/robot.png") left top no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .guiide-dg-card-background {
+    background-position: -80px top;
+  }
+}
+.guiide-card-background {
+  height: 100%;
+  background: url("../images/card-guiide.png") right top no-repeat;
+  background-size: cover;
+}
+
+/*@media (max-width: $xl) {
+    .guiide-card-background {
+        background-position: -390px top;
+    }
+}*/
+/*@media (max-width: $md) {
+    .guiide-card-background, 
+    .guiide-dg-card-background {
+        height: 270px;
+        background-size: contain;
+    }
+}*/
+.curve-left {
+  float: left;
+  height: 100%;
+  margin-left: -1px;
+}
+
+.curve-right {
+  float: right;
+  height: 100%;
+  margin-right: -1px;
+}
+
+@media (max-width: 768px) {
+  .curve-left,
+.curve-right {
+    visibility: hidden;
+  }
+}
+.footer {
+  margin-top: 150px;
+  padding: 25px 0;
+  background-color: #3B3B3D;
+  color: #fff;
+}
+.footer p {
+  margin: 0;
+}
+.footer i {
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

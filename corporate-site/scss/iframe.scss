@@ -1,0 +1,29 @@
+.analytics-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+@media (min-width: $md) {
+    .analytics-iframe {
+        height: 560px;
+    }
+}
+
+@media (min-width: $lg) {
+    .analytics-iframe {
+        height: 700px;
+    }
+}
+
+@media (min-width: $xl) {
+    .analytics-iframe {
+        height: 1000px;
+    }
+}
+
+@media (min-width: $xxl) {
+    .analytics-iframe {
+        height: 1200px;
+    }
+}
